@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/raw_data_grid_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/table_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <com.lyt.chart.chart.HorizontalScroller
+            android:id="@+id/real_time_data_col_count_horizontal_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+        </com.lyt.chart.chart.HorizontalScroller>
+    </LinearLayout>
+
+    <com.lyt.chart.chart.VerticalScroller
+        android:id="@+id/real_time_data_vertical_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/left_table"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <com.lyt.chart.chart.HorizontalScroller
+                android:id="@+id/real_time_data_display_data_horizontal_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/left_table"
+                android:scrollbars="none" >
+
+            </com.lyt.chart.chart.HorizontalScroller>
+        </RelativeLayout>
+    </com.lyt.chart.chart.VerticalScroller>
+
+</FrameLayout>

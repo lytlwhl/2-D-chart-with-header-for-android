@@ -1,4 +1,4 @@
-package com.lyt.chart;
+package com.lyt.chart.chart;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -11,7 +11,6 @@ public class HorizontalScroller extends HorizontalScrollView {
         void onHorizontalScroll(HorizontalScroller scrollView, int x, int y, int oldx, int oldy);
     }
 
-    private static final String TAG = "RealTimeDataHorizontalScroller";
     private HorizontalScrollViewListener mHorizontalScrollViewListener = null;
     View mBindScrollView;
 

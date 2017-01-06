@@ -1,4 +1,4 @@
-package com.lyt.chart;
+package com.lyt.chart.chart;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -8,11 +8,12 @@ import android.graphics.Paint.FontMetricsInt;
 import android.graphics.Rect;
 import android.view.View;
 
+import com.lyt.chart.R;
+
 import java.util.ArrayList;
 
 public class GridDisplayView extends View {
 
-    private static String TAG = "RealTimeDataDisplayView";
     private static int mTextSizeWidth = 0;
     private static int mTextSizeHeight = 0;
 

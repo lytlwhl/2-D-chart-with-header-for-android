@@ -6,54 +6,10 @@
     android:orientation="vertical"
     android:id="@+id/raw_data_grid_layout">
 
-    <LinearLayout
+    <com.lyt.chart.chart.LytChart
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:layout_height="match_parent">
 
-        <LinearLayout
-            android:id="@+id/table_id"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
-        </LinearLayout>
-
-        <com.lyt.chart.HorizontalScroller
-            android:id="@+id/real_time_data_col_count_horizontal_scrollView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="none" >
-        </com.lyt.chart.HorizontalScroller>
-    </LinearLayout>
-
-    <com.lyt.chart.VerticalScroller
-        android:id="@+id/real_time_data_vertical_scrollView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="4"
-        android:orientation="vertical"
-        android:scrollbars="none" >
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <LinearLayout
-                android:id="@+id/left_table"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical" >
-            </LinearLayout>
-
-            <com.lyt.chart.HorizontalScroller
-                android:id="@+id/real_time_data_display_data_horizontal_scrollview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/left_table"
-                android:scrollbars="none" >
-
-            </com.lyt.chart.HorizontalScroller>
-        </RelativeLayout>
-    </com.lyt.chart.VerticalScroller>
+    </com.lyt.chart.chart.LytChart>
 
 </LinearLayout>
